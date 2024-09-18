@@ -1,0 +1,178 @@
+.navbar {
+    background-color: #6299bb;
+}
+
+.signuplogo {
+    height: 35px;
+    width: 35px;
+}
+
+.navtxt {
+    font-size: x-large;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* margin-left: 70px; */
+}
+
+.navicon {
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+}
+
+.dogpaw {
+    height: 30px;
+    width: 30px;
+}
+
+.bgimg {
+    background-image: url('../goody_four_paws/assets/images/CompositeLayer1234.png');
+    height: 100vh;
+    /* Full height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registr {
+    text-align: center;
+
+}
+
+.signupform {
+    min-height: 280px;
+    max-width: 450px;
+
+}
+
+.ftext {
+
+    /* position: absolute;
+    top: 190;
+    left: 430; */
+}
+
+.form-control {
+    height: 30px;
+    border: 2px solid black;
+}
+
+@media(max-width:1010px) {
+    .ftext {
+        padding-inline: 2rem;
+
+
+    }
+
+    .signupform {
+        /* margin-top: 1rem; */
+        height: 260px;
+        overflow-y: auto;
+        padding: 3rem;
+    }
+
+    .registr {
+        margin-top: 5rem;
+    }
+}
+
+@media(max-width:500px) {
+    .signupform {
+        height: 140px;
+    }
+}
+
+@media(max-width:1200px) {
+    .registr {
+        margin-top: 3rem;
+    }
+}
+
+/* signup finish */
+
+.logoimg {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -150px;
+    left: -160px;
+}
+
+.form-input {
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sibtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #5CB7F0;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #44301C;
+    border: none;
+}
+
+@media(max-width:1200px) {
+    .logoimg {
+        /* height:50px;
+        width: 50px; 
+         position: relative;
+        top: 150;
+        left: 390; */
+    }
+
+}
+
+
+.homebgimg {
+    background-image: url('../goody_four_paws/assets/images/CompositeLayer123.png');
+    height: 100vh;
+    /* Full height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tibetinimg {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -200px;
+    left: -260px;
+}
+
+
+
+.tibetin2img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -120px;
+    left: -400px;
+}
+
+
+@media(max-width:768px) {
+    .list {
+        padding: 0 !important;
+    }
+}
