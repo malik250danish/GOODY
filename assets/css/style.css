@@ -635,8 +635,11 @@
 
 .btnShecdule {
     background: rgba(92, 183, 240, 1) !important;
-    color: #fff;
+    color: #fff; 
     font-size: 14px;
+}
+.btnShecdule:hover{
+color: #000;
 }
 
 .hr {
@@ -827,3 +830,16 @@
 }
 
 /* new css end */
+
+@media(max-width:800px){
+.me-section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 320px;
+    right: 20;
+}
+}
+
+    
