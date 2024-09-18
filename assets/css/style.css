@@ -287,7 +287,7 @@
 }
 
 .maincloudCard>img {
-    border-radius: 5px;
+    border-radius: 50%;
     border: 1px solid #fff;
     width: 200px;
     height: 200px;
@@ -635,11 +635,12 @@
 
 .btnShecdule {
     background: rgba(92, 183, 240, 1) !important;
-    color: #fff; 
+    color: #fff;
     font-size: 14px;
 }
-.btnShecdule:hover{
-color: #000;
+
+.btnShecdule:hover {
+    color: #000;
 }
 
 .hr {
@@ -831,15 +832,13 @@ color: #000;
 
 /* new css end */
 
-@media(max-width:800px){
-.me-section{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    top: 320px;
-    right: 20;
+@media(max-width:800px) {
+    .me-section {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 320px;
+        right: 20;
+    }
 }
-}
-
-    
