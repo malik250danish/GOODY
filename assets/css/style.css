@@ -598,6 +598,12 @@
     width: 100%;
 }
 
+.absoluteArea2 {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+}
+
 .detImage {
     height: 40px;
     width: 40px;
@@ -731,12 +737,22 @@
     font-weight: 600;
 }
 
+.fontsmall {
+    font-size: 10px;
+}
+
 @media(max-width:992px) {
     .absoluteArea {
         width: 100%;
         height: 321px;
         overflow-y: auto;
         top: 16rem;
+    }
+
+    .absoluteArea2 {
+        position: absolute;
+        top: 9rem;
+        width: 100%;
     }
 
     .mainArea {
@@ -746,6 +762,12 @@
 
 @media(max-width:768px) {
     .absoluteArea {
+        width: 100%;
+        height: 321px;
+        overflow-y: auto;
+    }
+
+    .absoluteArea2 {
         width: 100%;
         height: 321px;
         overflow-y: auto;
