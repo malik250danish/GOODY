@@ -288,6 +288,10 @@
     position: relative;
 }
 
+.mt1 {
+    margin-top: 0.01rem !important
+}
+
 .maincloudCard>img {
     border-radius: 50%;
     border: 1px solid #fff;
@@ -356,12 +360,12 @@
     width: 100% !important;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .content-overlay {
 
         overflow: auto;
         height: 185px;
-        padding: 6rem;
+        padding: 2rem;
     }
 }
 
@@ -780,8 +784,9 @@
     top: 20px;
     left: 45%;
 }
+
 @media(max-width:500px) {
-    .woodText{
+    .woodText {
         position: absolute;
         top: -4px;
         left: 35%;
@@ -800,14 +805,18 @@
     left: 14%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align items to the bottom */
-    align-items: center; /* Center the button horizontally */
-    padding-bottom: 20px; /* Add padding to ensure space below the button */
- height: 300px;
- 
+    justify-content: space-between;
+    /* Align items to the bottom */
+    align-items: center;
+    /* Center the button horizontally */
+    padding-bottom: 20px;
+    /* Add padding to ensure space below the button */
+    height: 300px;
+
 
 }
-.paymentBox > div{
+
+.paymentBox>div {
     height: 100%;
 }
 
@@ -817,8 +826,19 @@
 
 .serviceText {
     position: absolute;
-    top: 20%;
+    top: -15px;
     left: 13%;
+}
+
+.fcl {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.serviceCard {
+    color: #000;
+    text-decoration: none;
+
 }
 
 .clientImage {
@@ -863,6 +883,7 @@
         right: 20;
     }
 }
+
 /* @media (max-width:800px){
     .abstext{
         margin-left: 40px;
