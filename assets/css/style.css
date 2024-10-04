@@ -746,6 +746,10 @@
     height: 100%;
 }
 
+.p-23 {
+    padding-top: 23rem;
+}
+
 @media(max-width:992px) {
     .absoluteArea {
         width: 100%;
@@ -786,6 +790,9 @@
         margin-bottom: 12rem;
     }
 
+    .p-23 {
+        padding-top: 11rem;
+    }
 }
 
 .cloudText {
