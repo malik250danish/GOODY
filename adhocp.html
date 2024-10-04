@@ -17,6 +17,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.css"
     />
+    <style>
+      @media (max-width: 768px) {
+        .h-fit {
+          height: fit-content;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -105,7 +112,7 @@
 
     <div class="bgimg2 area">
       <div class="mainArea position-relative">
-        <div class="absoluteArea2">
+        <div class="absoluteArea2 h-fit pt-5">
           <div class="d-flex justify-content-between w-100 mt-3">
             <div class="d-flex gap-2 align-items-center">
               <img class="detImage" src="./assets/images/logo.png" alt="" />
@@ -113,35 +120,35 @@
             </div>
           </div>
           <div>
-            <div class="row absoluteArea">
+            <div class="row mt-2">
               <p class="mb-0 fw-bolder mb-2">Ad Hoc Pricing</p>
-              <div class="col-md-4 my-1">
+              <div class="col-4 my-1">
                 <a
                   href="./plan.html"
                   for="time1"
-                  class="checkBox btn border border-black"
+                  class="checkBox btn checkb border border-black"
                 >
                   <input class="d-none" type="radio" name="time" id="time1" />
                   Day Care
                 </a>
                 <p class="text-center fw-bold fontsmall">£55</p>
               </div>
-              <div class="col-md-4 my-1">
+              <div class="col-4 my-1">
                 <a
                   href="./plan.html"
                   for="time2"
-                  class="checkBox btn border border-black"
+                  class="checkBox btn checkb border border-black"
                 >
                   <input class="d-none" type="radio" name="time" id="time2" />
                   1 Hour
                 </a>
                 <p class="text-center fw-bold fontsmall">Walk is £27</p>
               </div>
-              <div class="col-md-4 my-1">
+              <div class="col-4 my-1">
                 <a
                   href="./plan.html"
                   for="time3"
-                  class="checkBox btn border border-black"
+                  class="checkBox btn checkb border border-black"
                 >
                   <input class="d-none" type="radio" name="time" id="time3" />
                   2 Hour
