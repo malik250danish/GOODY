@@ -1,0 +1,162 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goody-Four-Paws</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.css"
+    />
+    <style>
+      .h-fit {
+        height: fit-content !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bgNavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./assets/images/goddylogo.png" width="100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-between w-100 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link navText"
+                aria-current="page"
+                href="./homeportal.html"
+                >My Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navLink navText"
+                aria-current="page"
+                href="./schedule.html"
+                >My Schedule</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navLink navText"
+                aria-current="page"
+                href="./choose.html"
+                >Choose Plan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navLink navText" href="./service.html"
+                >Services</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navLink navText" href="./payment.html"
+                >Payment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navLink navText" href="./login.html">Logout</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 align-items-center" role="search">
+            <span
+              ><a
+                href="https://www.instagram.com/goodyfourpaws?utm_source=qr&igsh=ODczZmtmZTNpOWEz"
+                ><img src="./assets/images/insta.png" alt="" width="25px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/goodyfourpaws?utm_source=qr&igsh=ODczZmtmZTNpOWEz"
+                ><a
+                  href="https://www.facebook.com/profile.php?id=61566455428613"
+                  ><img
+                    src="./assets/images/fbbrand2.svg"
+                    alt=""
+                    width="20px" /></a></a
+            ></span>
+            <span
+              ><a
+                href="https://www.tiktok.com/@goody.four.paws?_t=8q1a5LMsC2b&_r=1"
+                ><img src="./assets/images/tiktok.png" alt="" width="25px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bgimg2 area">
+      <div class="mainArea position-relative">
+        <div class="absoluteArea2 pt-5 mt-4">
+          <div class="d-flex justify-content-between w-100 mt-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img class="detImage" src="./assets/images/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="absoluteArea">
+            <div class="row justify-content-center d-block d-md-flex h-fit">
+              <div class="col-md-5 my-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-input w-100"
+                    placeholder="Enter Post Code"
+                  />
+                </div>
+                <a href="./adhocpricing.html" class="btn btnShecdule w-100"
+                  >Next</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- schedule area -->
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- bootstrap script cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- js calender-->
+  <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.js"></script>
+
+  <script type="text/javascript">
+    // Get the element
+    var element = document.getElementById("my-calendar");
+
+    // Create the calendar
+    var myCalendar = jsCalendar.new(element, null, {
+      navigator: false, // Optional: Hide navigator
+      monthFormat: "", // Optional: Hide month name
+      zeroFill: false, // Optional: Prevent zero-padding of days
+      firstDayOfTheWeek: 2, // Optional: Set Monday as the first day of the week
+    });
+
+    // Define the dates to be selected
+
+    myCalendar.select(["01/09/2024", "12/09/2024"]);
+  </script>
+</html>

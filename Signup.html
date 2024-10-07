@@ -12,6 +12,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .absoluteArea {
+        top: -11rem;
+        height: 350px;
+        overflow: auto;
+      }
+      .signupform {
+        padding: 0;
+      }
+      .ftext {
+        padding: 1rem;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bgNavbar">
@@ -194,116 +207,193 @@
       </div>
     </nav> -->
 
-    <div class="bgimg">
-      <div class="ftext">
-        <h5 class="registr">Registration</h5>
-        <form class="signupform">
-          <div class="row g-2">
-            <div class="col-12 col-lg-6">
-              <input type="text" class="form-control" placeholder="Name" />
+    <div class="bgimg area">
+      <div class="mainArea position-relative">
+        <div class="ftext absoluteArea">
+          <h5 class="registr">Registration</h5>
+          <form class="signupform">
+            <div class="row g-2">
+              <div class="col-6 col-lg-6">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-6 col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pet Name/s"
+                />
+              </div>
             </div>
-            <div class="col-12 col-lg-6">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Pet Name/s"
-              />
+            <div class="row g-2 mt1">
+              <div class="col-6 col-lg-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pet Breed/s"
+                />
+              </div>
+              <div class="col-6 col-lg-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Size + Weight"
+                />
+              </div>
+              <div class="col-12 col-lg-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Vet Details"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row g-2 mt1">
-            <div class="col-12 col-lg-4">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Pet Breed/s"
-              />
+            <div class="row g-2 mt1">
+              <div class="col-12 col-lg-12">
+                <input type="text" class="form-control" placeholder="Address" />
+              </div>
             </div>
-            <div class="col-12 col-lg-4">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Size + Weight"
-              />
+            <div class="row g-2 mt1">
+              <div class="col-6 col-lg-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="col-6 col-lg-4">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-6 col-lg-4">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
             </div>
-            <div class="col-12 col-lg-4">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Vet Details"
-              />
-            </div>
-          </div>
-          <div class="row g-2 mt1">
-            <div class="col-12 col-lg-7">
-              <input type="text" class="form-control" placeholder="Address" />
-            </div>
-            <div class="col-12 col-lg-4">
-              <input type="text" class="form-control" placeholder="Post Code" />
-            </div>
-          </div>
-          <div class="row g-2 mt1">
-            <div class="col-12 col-lg-4">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Phone Number"
-              />
-            </div>
-            <div class="col-12 col-lg-4">
-              <input type="email" class="form-control" placeholder="Email" />
-            </div>
-            <div class="col-12 col-lg-4">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Password"
-              />
-            </div>
-          </div>
 
-          <div class="row g-2 mt1">
-            <div class="col-12">
-              <textarea
-                class="form-control"
-                rows="2"
-                placeholder="Any additional info about their Pets"
-              ></textarea>
+            <div class="row g-2 mt1">
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  rows="2"
+                  placeholder="Any additional info about their Pets"
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="form-check mb-0 mt-1">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefault"
-            />
-            <label class="form-check-label fcl mb-0" for="flexCheckDefault">
-              I have read Goody Four Paws
-              <a href="./trems.html">T's and C's</a> and have understood clause
-              14. and I understand that Goody Four Paws staff are under contract
-              during and after termination for a reasonable period of time
-              stated between Goody Four Paws and Contractor/Staff Members. I
-              will not attempt to solicit their services whether inadvertently
-              directly or indirectly and will not engage in any such
-              communication with said Staff Member.
-            </label>
-          </div>
-          <div class="d-flex justify-content-center">
-            <a href="./trems.html" class="text-decoration-none text-primary"
-              >Term & Conditions</a
-            >
-          </div>
-          <div class="row g-2 mt-0">
-            <div class="col-12 col-lg-6">
-              <button class="btn btn-primary w-100">Sign Up</button>
+
+            <div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="termsAndConditions"
+                />
+                <label class="form-check-label" for="termsAndConditions">
+                  I agree to Terms and Conditions
+                </label>
+              </div>
+
+              <!-- 24 hour adjustment policy -->
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="adjustmentPolicy"
+                />
+                <label class="form-check-label" for="adjustmentPolicy">
+                  I understand the 24 hour adjustment policy and I can switch
+                  days but cannot cancel.
+                </label>
+              </div>
+
+              <!-- Fully vaccinated and treated -->
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="fullyVaccinated"
+                />
+                <label class="form-check-label" for="fullyVaccinated">
+                  My dog/s are fully vaccinated and regularly tick and flea
+                  treated and I will maintain this.
+                </label>
+              </div>
+
+              <!-- Kennel cough -->
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="kennelCough"
+                />
+                <label class="form-check-label" for="kennelCough">
+                  My dog/s is not symptomatic of kennel cough.
+                </label>
+              </div>
+              <div class="form-check mb-0 mt-1">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label fcl mb-0" for="flexCheckDefault">
+                  I have read Goody Four Paws
+                  <a href="./trems.html">T's and C's</a> and have understood
+                  clause 14. and I understand that Goody Four Paws staff are
+                  under contract during and after termination for a reasonable
+                  period of time stated between Goody Four Paws and
+                  Contractor/Staff Members. I will not attempt to solicit their
+                  services whether inadvertently directly or indirectly and will
+                  not engage in any such communication with said Staff Member.
+                </label>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="form-check my-2">
+                  <!-- <input
+                class="form-check-input"
+                type="checkbox"
+                id="parks"
+              /> -->
+                  <label class="form-check-label" for="parks">
+                    In parks my dog/s
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="offleash "
+                  />
+                  <label class="form-check-label" for="offleash ">
+                    Allowed off leash
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="onleash "
+                  />
+                  <label class="form-check-label" for="onleash">
+                    Keep on leash
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-lg-6">
-              <a href="./adhocpricing.html" class="btn btn-secondary w-100"
-                >Ad Hoc Pricing</a
-              >
+            <div class="row g-2 mt-0">
+              <div class="col-6 col-lg-6">
+                <a href="./login.html" class="btn btn-primary w-100">Sign Up</a>
+              </div>
+              <div class="col-6 col-lg-6">
+                <a href="./addcodeadhoc.html" class="btn btn-secondary w-100"
+                  >Ad Hoc Pricing</a
+                >
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </body>

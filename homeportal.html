@@ -52,6 +52,32 @@
         left: 28%;
         z-index: 9999 !important;
       }
+      .harea {
+        height: 350px;
+        overflow: auto;
+      }
+      .swiper {
+        overflow: auto !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+      }
+      @media (max-width: 800px) {
+        .me-section {
+          position: static;
+          flex-direction: column;
+        }
+        .flexColumn {
+          flex-direction: column;
+        }
+        .harea {
+          height: 350px;
+          overflow-y: scroll; /* Ensure vertical overflow works */
+          overflow-x: hidden;
+        }
+        .swiper {
+          overflow: auto !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -140,10 +166,10 @@
 
     <div class="bgimg2 area">
       <div class="mainArea position-relative">
-        <div class="absoluteArea">
+        <div class="absoluteArea harea">
           <div class="d-flex justify-content-between w-100 mt-5">
             <img class="detImage" src="./assets/images/logo.png" alt="" />
-            <p class="mb-0">My Details</p>
+            <p class="mb-0 fw-bold">My Details</p>
             <p></p>
           </div>
           <hr class="my-1" />
@@ -151,7 +177,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div>
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between flexColumn">
                     <div class="position-relative wfit">
                       <input
                         type="file"
@@ -181,7 +207,7 @@
                         >
                         <div class="row align-items-center">
                           <div class="col-md-6">
-                            <h4 class="fh2 m-0">Reffer A Friend</h4>
+                            <h4 class="fh2 m-0">Refer A Friend</h4>
                           </div>
                           <div class="col-md-6">
                             <div class="input-group">
@@ -202,7 +228,9 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row justify-content-end positionabs">
+                        <div
+                          class="row justify-content-end positionabs d-none d-none"
+                        >
                           <div class="col-md-4 swB d-flex gap-5 pt-4">
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
@@ -251,10 +279,131 @@
                         </p>
                         <div class="d-flex justify-content-between">
                           <p class="fs1 m-0">
-                            <span class="fw-bold">Dog Brith Date:</span>30-11-20
+                            <span class="fw-bold">Dog Date of Birth :</span
+                            >30/11/2020
                           </p>
                         </div>
                         <a href="./forgotpass.html">Forgot Password</a>
+                        <div>
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="termsAndConditions"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="termsAndConditions"
+                            >
+                              I agree to Terms and Conditions
+                            </label>
+                          </div>
+
+                          <!-- 24 hour adjustment policy -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="adjustmentPolicy"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="adjustmentPolicy"
+                            >
+                              I understand the 24 hour adjustment policy and I
+                              can switch days but cannot cancel.
+                            </label>
+                          </div>
+
+                          <!-- Fully vaccinated and treated -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="fullyVaccinated"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="fullyVaccinated"
+                            >
+                              My dog/s are fully vaccinated and regularly tick
+                              and flea treated and I will maintain this.
+                            </label>
+                          </div>
+
+                          <!-- Kennel cough -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="kennelCough"
+                            />
+                            <label class="form-check-label" for="kennelCough">
+                              My dog/s is not symptomatic of kennel cough.
+                            </label>
+                          </div>
+                          <div class="form-check mb-0 mt-1">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label fcl mb-0"
+                              for="flexCheckDefault"
+                            >
+                              I have read Goody Four Paws
+                              <a href="./trems.html">T's and C's</a> and have
+                              understood clause 14. and I understand that Goody
+                              Four Paws staff are under contract during and
+                              after termination for a reasonable period of time
+                              stated between Goody Four Paws and
+                              Contractor/Staff Members. I will not attempt to
+                              solicit their services whether inadvertently
+                              directly or indirectly and will not engage in any
+                              such communication with said Staff Member.
+                            </label>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <div class="form-check my-2">
+                              <!-- <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="parks"
+                          /> -->
+                              <label class="form-check-label" for="parks">
+                                In parks my dog/s
+                              </label>
+                            </div>
+                            <div class="form-check my-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="offleash "
+                              />
+                              <label class="form-check-label" for="offleash ">
+                                Allowed off leash
+                              </label>
+                            </div>
+                            <div class="form-check my-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="onleash "
+                              />
+                              <label class="form-check-label" for="onleash">
+                                Keep on leash
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center d-flex">
+                          <div class="col-md-4 swB d-flex gap-5 pt-4">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -262,7 +411,7 @@
               </div>
               <div class="swiper-slide">
                 <div>
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between flexColumn">
                     <div class="position-relative wfit">
                       <input
                         type="file"
@@ -292,7 +441,7 @@
                         >
                         <div class="row align-items-center">
                           <div class="col-md-6">
-                            <h4 class="fh2 m-0">Reffer A Friend</h4>
+                            <h4 class="fh2 m-0">Refer A Friend</h4>
                           </div>
                           <div class="col-md-6">
                             <div class="input-group">
@@ -314,7 +463,7 @@
                           </div>
                         </div>
                         <div class="row justify-content-end positionabs">
-                          <div class="col-md-4 swB d-flex gap-5 pt-4">
+                          <div class="col-md-4 swB d-none gap-5 pt-4">
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                           </div>
@@ -362,10 +511,131 @@
                         </p>
                         <div class="d-flex justify-content-between">
                           <p class="fs1 m-0">
-                            <span class="fw-bold">Dog Brith Date:</span>30-11-20
+                            <span class="fw-bold">Dog Date of Birth :</span
+                            >30/11/2020
                           </p>
                         </div>
                         <a href="./forgotpass.html">Forgot Password</a>
+                        <div>
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="termsAndConditions"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="termsAndConditions"
+                            >
+                              I agree to Terms and Conditions
+                            </label>
+                          </div>
+
+                          <!-- 24 hour adjustment policy -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="adjustmentPolicy"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="adjustmentPolicy"
+                            >
+                              I understand the 24 hour adjustment policy and I
+                              can switch days but cannot cancel.
+                            </label>
+                          </div>
+
+                          <!-- Fully vaccinated and treated -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="fullyVaccinated"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="fullyVaccinated"
+                            >
+                              My dog/s are fully vaccinated and regularly tick
+                              and flea treated and I will maintain this.
+                            </label>
+                          </div>
+
+                          <!-- Kennel cough -->
+                          <div class="form-check my-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="kennelCough"
+                            />
+                            <label class="form-check-label" for="kennelCough">
+                              My dog/s is not symptomatic of kennel cough.
+                            </label>
+                          </div>
+                          <div class="form-check mb-0 mt-1">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label fcl mb-0"
+                              for="flexCheckDefault"
+                            >
+                              I have read Goody Four Paws
+                              <a href="./trems.html">T's and C's</a> and have
+                              understood clause 14. and I understand that Goody
+                              Four Paws staff are under contract during and
+                              after termination for a reasonable period of time
+                              stated between Goody Four Paws and
+                              Contractor/Staff Members. I will not attempt to
+                              solicit their services whether inadvertently
+                              directly or indirectly and will not engage in any
+                              such communication with said Staff Member.
+                            </label>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <div class="form-check my-2">
+                              <!-- <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="parks"
+                          /> -->
+                              <label class="form-check-label" for="parks">
+                                In parks my dog/s
+                              </label>
+                            </div>
+                            <div class="form-check my-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="offleash "
+                              />
+                              <label class="form-check-label" for="offleash ">
+                                Allowed off leash
+                              </label>
+                            </div>
+                            <div class="form-check my-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="onleash "
+                              />
+                              <label class="form-check-label" for="onleash">
+                                Keep on leash
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center d-flex">
+                          <div class="col-md-4 swB d-flex gap-5 pt-4">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
