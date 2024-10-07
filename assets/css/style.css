@@ -918,6 +918,10 @@
     }
 }
 
+.bgFooter {
+    background-color: #6299BB;
+}
+
 /* @media (max-width:800px){
     .abstext{
         margin-left: 40px;

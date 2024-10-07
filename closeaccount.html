@@ -12,6 +12,73 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .popup {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+      .swiper-button-next {
+        position: static !important;
+      }
+      .swiper-button-pre {
+        position: static !important;
+      }
+      .swiper-button-disabled {
+        position: static !important;
+      }
+      .swiper-button-next {
+        position: static !important;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        position: static !important;
+      }
+
+      .positionabs {
+        position: absolute;
+        bottom: -80px;
+        left: 28%;
+        z-index: 9999 !important;
+      }
+      .harea {
+        height: 350px;
+        overflow: auto;
+      }
+      .swiper {
+        overflow: auto !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+      }
+      @media (max-width: 800px) {
+        .me-section {
+          position: static;
+          flex-direction: column;
+        }
+        .flexColumn {
+          flex-direction: column;
+        }
+        .harea {
+          height: 350px;
+          overflow-y: scroll; /* Ensure vertical overflow works */
+          overflow-x: hidden;
+        }
+        .swiper {
+          overflow: auto !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bgNavbar">
@@ -97,36 +164,82 @@
       </div>
     </nav>
 
-    <div class="bgimg3">
-      <div class="container">
-        <div class="row my-2">
-          <div class="col-md-12">
-            <div class="position-relative">
-              <img class="img-fluid" src="./assets/images/wood.png" alt="" />
-              <h2 class="text-center woodText fw-bolder">Ad Hoc</h2>
-            </div>
+    <div class="bgimg2 area">
+      <div class="mainArea position-relative">
+        <div class="absoluteArea harea">
+          <div class="d-flex justify-content-between w-100 mt-5">
+            <img class="detImage" src="./assets/images/logo.png" alt="" />
+            <p class="mb-0 fw-bold">Close Account</p>
+            <p></p>
           </div>
+          <hr class="my-1" />
+          <div class="">
+            <div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="termsAndConditions"
+                />
+                <label class="form-check-label" for="termsAndConditions">
+                  My budget has changed
+                </label>
+              </div>
 
-          <div class="col-md-12 my-2 position-relative">
-            <img class="paymentImage" src="./assets/images/py2.png" alt="" />
-            <div class="paymentBox">
-              <p class="fh2 text-center">Ad Hoc</p>
-              <p class="fs1 text-center my-2">
-                (Home collection/return in our school bus or taxi)
-              </p>
-              <p class="fs1 text-center my-2">4+ fixed days a week @ £43/day</p>
-              <p class="fs1 text-center my-2">3 fixed days a week @ £45/day</p>
-              <p class="fs1 text-center my-2">2 fixed days a week @ £48/day</p>
-              <p class="fs1 text-center my-2">1 fixed day a week @ £50/day</p>
-              <p class="fs1 text-center my-2">
-                Extra/ad-hoc walks available @ Your fixed walk rate
-              </p>
-              <a
-                href="./adhocp.html"
-                class="my-2 btn btnShecdule px-4 d-block mx-auto"
-              >
-                Schedule Now
-              </a>
+              <!-- 24 hour adjustment policy -->
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="adjustmentPolicy"
+                />
+                <label class="form-check-label" for="adjustmentPolicy">
+                  I have found a different dog walking/daycare company
+                </label>
+              </div>
+
+              <!-- Fully vaccinated and treated -->
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="fullyVaccinated"
+                />
+                <label class="form-check-label" for="fullyVaccinated">
+                  I have changed my mind
+                </label>
+              </div>
+
+              <!-- Kennel cough -->
+              <div class="form-check my-2">
+                <label class="form-check-label" for="kennelCough">
+                  I am not happy with the services
+                </label>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="please tell us more"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="form-check my-2">
+                <label class="form-check-label" for="kennelCough">
+                  something else
+                </label>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="please tell us more"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <a href="./discount.html" class="btn btnShecdule w-100"
+                    >Submit</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
