@@ -123,180 +123,195 @@
           </div>
         </nav>
 
-    <div class="bgimg2 area">
+        <div class="bgimg2 area">
+          <div class="mainArea position-relative">
+            <div class="absoluteArea2 pt-5 mt-4">
+              <div class="d-flex align-items-center w-100 mt-3">
+                <div class="d-flex gap-2 align-items-center">
+                  <img class="detImage" src="./assets/images/logo.png" alt="" />
+                </div>
+                <p class="mb-0 fw-bolder text-center w-100">Choose Plan</p>
+              </div>
+
+              <div action="" id="multistepForm">
+                <div class="mt-3">
+                  <div class="row"></div>
+                  <div class="row">
+                    <div class="col-4 my-1">
+                      <label for="time1" class="checkBox">
+                        <input class="d-none" type="radio" name="time" id="time1" />
+                        9:00 am
+                      </label>
+                    </div>
+                    <div class="col-4 my-1">
+                      <label for="time2" class="checkBox">
+                        <input class="d-none" type="radio" name="time" id="time2" />
+                        12:00 pm
+                      </label>
+                    </div>
+                    <div class="col-4 my-1">
+                      <label for="time3" class="checkBox">
+                        <input class="d-none" type="radio" name="time" id="time3" />
+                        3:00 pm
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1 flex-wrap flex-md-nowrap">
+                    <label for="day1" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day1" />
+                      Mon
+                    </label>
+                    <label for="day2" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day2" />
+                      Tue
+                    </label>
+                    <label for="day3" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day3" />
+                      Wed
+                    </label>
+                    <label for="day4" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day4" />
+                      Thu
+                    </label>
+                    <label for="day5" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day5" />
+                      Fri
+                    </label>
+                    <label for="day6" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day6" />
+                      Sat
+                    </label>
+                    <label for="day7" class="checkBox checkb">
+                      <input class="d-none" type="radio" name="day" id="day7" />
+                      Sun
+                    </label>
+                  </div>
+                  <div>
+                    <div class="form-check my-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="termsAndConditions"
+                      />
+                      <label class="form-check-label" for="termsAndConditions">
+                        I agree to Terms and Conditions
+                      </label>
+                    </div>
+    
+                    <!-- 24 hour adjustment policy -->
+                    <div class="form-check my-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="adjustmentPolicy"
+                      />
+                      <label class="form-check-label" for="adjustmentPolicy">
+                        I understand the 24 hour adjustment policy and I can switch
+                        days but cannot cancel.
+                      </label>
+                    </div>
+    
+                    <!-- Fully vaccinated and treated -->
+                    <div class="form-check my-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="fullyVaccinated"
+                      />
+                      <label class="form-check-label" for="fullyVaccinated">
+                        My dog/s are fully vaccinated and regularly tick and flea
+                        treated and I will maintain this.
+                      </label>
+                    </div>
+    
+                    <!-- Kennel cough -->
+                    <div class="form-check my-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="kennelCough"
+                      />
+                      <label class="form-check-label" for="kennelCough">
+                        My dog/s is not symptomatic of kennel cough.
+                      </label>
+                    </div>
+                    <div class="form-check mb-0 mt-1">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                          <label
+                                  class="form-check-label fcl mb-0"
+                                  for="flexCheckDefault"
+                                >
+                                I have read Goody Four Paws <a href="./trems.html">T's and C's</a> and have understood clause 14. I understand that Goody Four Paws staff are hired and trained by Goody Four Paws. They are only insured and licenced to care for dogs with Goody Four Paws. All staff are under contract with Goody Four Paws during and after termination of agreement for a reasonable period of time stated between Goody Four Paws and Staff Member. I will not attempt to solicit their services whether inadvertently directly or indirectly and will not engage in any such communication with said Staff Member.
+                                </label>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <div class="form-check my-2">
+                        <!-- <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="parks"
+                        /> -->
+                        <label class="form-check-label" for="parks">
+                          In parks my dog/s
+                        </label>
+                      </div>
+                      <div class="form-check my-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="offleash "
+                        />
+                        <label class="form-check-label" for="offleash ">
+                          Allowed off leash
+                        </label>
+                      </div>
+                      <div class="form-check my-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="onleash "
+                        />
+                        <label class="form-check-label" for="onleash">
+                          Keep on leash
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="d-flex justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btnBack px-5"
+                      onclick="prevStep()"
+                    >
+                      Back
+                    </button>
+                    <button type="submit" class="btn btnShecdule px-5">
+                      Schedule
+                    </button>
+                  </div>
+                </div> -->
+                <!-- Add more steps as needed -->
+                 <button class="btn btnShecdule px-5 d-block mx-auto">Schedule Now</button>
+              </form>
+              <!-- schedule area -->
+              <div></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <!-- <div class="bgimg2 area">
       <div class="mainArea position-relative">
         <div class="absoluteArea pt-5">
-          <form action="" id="multistepForm">
-            <div class="mt-3">
-              <div class="row"></div>
-              <div class="row">
-                <div class="col-4 my-1">
-                  <label for="time1" class="checkBox">
-                    <input class="d-none" type="radio" name="time" id="time1" />
-                    9:00 am
-                  </label>
-                </div>
-                <div class="col-4 my-1">
-                  <label for="time2" class="checkBox">
-                    <input class="d-none" type="radio" name="time" id="time2" />
-                    12:00 pm
-                  </label>
-                </div>
-                <div class="col-4 my-1">
-                  <label for="time3" class="checkBox">
-                    <input class="d-none" type="radio" name="time" id="time3" />
-                    3:00 pm
-                  </label>
-                </div>
-              </div>
-              <div class="d-flex gap-1 flex-wrap flex-md-nowrap">
-                <label for="day1" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day1" />
-                  Mon
-                </label>
-                <label for="day2" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day2" />
-                  Tue
-                </label>
-                <label for="day3" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day3" />
-                  Wed
-                </label>
-                <label for="day4" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day4" />
-                  Thu
-                </label>
-                <label for="day5" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day5" />
-                  Fri
-                </label>
-                <label for="day6" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day6" />
-                  Sat
-                </label>
-                <label for="day7" class="checkBox checkb">
-                  <input class="d-none" type="radio" name="day" id="day7" />
-                  Sun
-                </label>
-              </div>
-              <div>
-                <div class="form-check my-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="termsAndConditions"
-                  />
-                  <label class="form-check-label" for="termsAndConditions">
-                    I agree to Terms and Conditions
-                  </label>
-                </div>
-
-                <!-- 24 hour adjustment policy -->
-                <div class="form-check my-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="adjustmentPolicy"
-                  />
-                  <label class="form-check-label" for="adjustmentPolicy">
-                    I understand the 24 hour adjustment policy and I can switch
-                    days but cannot cancel.
-                  </label>
-                </div>
-
-                <!-- Fully vaccinated and treated -->
-                <div class="form-check my-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="fullyVaccinated"
-                  />
-                  <label class="form-check-label" for="fullyVaccinated">
-                    My dog/s are fully vaccinated and regularly tick and flea
-                    treated and I will maintain this.
-                  </label>
-                </div>
-
-                <!-- Kennel cough -->
-                <div class="form-check my-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="kennelCough"
-                  />
-                  <label class="form-check-label" for="kennelCough">
-                    My dog/s is not symptomatic of kennel cough.
-                  </label>
-                </div>
-                <div class="form-check mb-0 mt-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label fcl mb-0" for="flexCheckDefault">
-                    I have read Goody Four Paws <a href="./trems.html">T's and C's</a> and have understood clause
-                    14. and I understand that Goody Four Paws staff are under contract
-                    during and after termination for a reasonable period of time
-                    stated between Goody Four Paws and Contractor/Staff Members. I
-                    will not attempt to solicit their services whether inadvertently
-                    directly or indirectly and will not engage in any such
-                    communication with said Staff Member.
-                  </label>
-                </div>
-                <div class="d-flex gap-2">
-                  <div class="form-check my-2">
-                    <!-- <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="parks"
-                    /> -->
-                    <label class="form-check-label" for="parks">
-                      In parks my dog/s
-                    </label>
-                  </div>
-                  <div class="form-check my-2">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="offleash "
-                    />
-                    <label class="form-check-label" for="offleash ">
-                      Allowed off leash
-                    </label>
-                  </div>
-                  <div class="form-check my-2">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="onleash "
-                    />
-                    <label class="form-check-label" for="onleash">
-                      Keep on leash
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="d-flex justify-content-center gap-2">
-                <button
-                  type="button"
-                  class="btn btnBack px-5"
-                  onclick="prevStep()"
-                >
-                  Back
-                </button>
-                <button type="submit" class="btn btnShecdule px-5">
-                  Schedule
-                </button>
-              </div>
-            </div> -->
-            <!-- Add more steps as needed -->
-             <button class="btn btnShecdule px-5 d-block mx-auto">Schedule Now</button>
-          </form>
+       
         </div>
       </div>
-    </div>
+    </div> -->
      <!-- footer -->
      <footer class="py-3  container-fluid bgFooter">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
